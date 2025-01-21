@@ -1,0 +1,43 @@
+/*Structure*/
+body{
+    background:url(images/flowers.jpeg) ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#content {
+    background-color: white;
+    width: 70%;
+    margin:auto;
+    padding:15px;
+    border: 1px solid darkblue;
+}
+header,footer{
+    background-color: darkblue;
+    padding:5px;
+    color:white
+}
+/* Navigation */
+#main-nav ul{
+    padding-left:3px;
+}
+#main-nav li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+#main-nav a{
+    color:white;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+#main-nav a:hover{
+    color:crimson;
+    border-bottom: 1px solid crimson;
+}
+
+/* Typography */
+header h1{
+    text-align: center;
+}
+footer p{
+    text-align: center;
+}
