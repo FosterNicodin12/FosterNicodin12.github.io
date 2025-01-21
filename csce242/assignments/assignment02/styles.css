@@ -1,20 +1,47 @@
 /*Structure*/
 body{
-    background:url(images/flowers.jpeg) ;
+    background:url(images/stadium.jpg) ;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 #content {
-    background-color: white;
+    background-color: azure;
     width: 70%;
     margin:auto;
     padding:15px;
     border: 1px solid darkblue;
+}
+#pro {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontal center */
+    justify-content: center; /* Vertical center */
+    text-align: center;
+    padding: 20px;
+}
+table th{
+    text-align: center;
+    background-color:slategrey;
+}
+table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid darkblue;
+    background-color:slategrey;
+
+}
+#images {
+    display: flex;
+    padding: 50px;
+}
+img{
+    border: 2px solid red;
 }
 header,footer{
     background-color: darkblue;
     padding:5px;
     color:white
 }
+
 /* Navigation */
 #main-nav ul{
     padding-left:3px;
@@ -30,8 +57,8 @@ header,footer{
     border-bottom: 1px solid transparent;
 }
 #main-nav a:hover{
-    color:crimson;
-    border-bottom: 1px solid crimson;
+    color:rgb(20, 220, 23);
+    border-bottom: 1px solid rgb(20, 220, 23);
 }
 
 /* Typography */
@@ -39,5 +66,8 @@ header h1{
     text-align: center;
 }
 footer p{
+    text-align: center;
+}
+#pro h2{
     text-align: center;
 }
