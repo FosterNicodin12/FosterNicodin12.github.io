@@ -1,7 +1,7 @@
 
 /*Structure*/
 body{
-    background: rgb(#EBCC95) ;
+    background: #EBCC95 ;
     font-family: Arial, Helvetica, sans-serif
 }
 #content {
@@ -12,7 +12,7 @@ body{
     border: 1px solid darkblue;
 }
 header,footer{
-    background-color: rgb(#EB9946);
+    background-color: #EB9946;
     padding:5px;
     color:black
 }
@@ -28,9 +28,6 @@ header,footer{
 }
 .oneoftwo {
     flex-direction: row;
-}
-.oneoftwo.reverse .thecontent {
-    flex-direction: row-reverse;
 }
 .oneoftwo, .fouroffive, .oneofsix, .middle-column{
     background-color: #EBCC95;
@@ -107,7 +104,7 @@ footer p{
     }
 
     .twobytwo .box {
-        flex: 1 1;
+        flex: 1;
         box-sizing: border-box;
         padding: 10px;
         background-color: #EBCC95;
@@ -190,10 +187,14 @@ h3 {
     margin-top: 20px;
 }
 #idea2 {
-    margin-left: 300px;
+    margin-left: 235px;
 }
 #ptwo {
     margin-left: -20px;
+    flex: 8;
+}
+.twoimage {
+    flex:2;
 }
 }
 /* Smaller Resolutions */
@@ -205,7 +206,7 @@ h3 {
     .thecontent, .image, .thecontent {
         align-items: center;
     }
-    .oneoftwo.reverse .thecontent {
+    .thecontent {
         flex-direction: column;
     }
 
