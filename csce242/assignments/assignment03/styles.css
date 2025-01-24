@@ -1,0 +1,243 @@
+
+/*Structure*/
+body{
+    background: rgb(#EBCC95) ;
+    font-family: Arial, Helvetica, sans-serif
+}
+#content {
+    background-color: #EBCC95;
+    width: 90%;
+    margin: auto;
+    padding:15px;
+    border: 1px solid darkblue;
+}
+header,footer{
+    background-color: rgb(#EB9946);
+    padding:5px;
+    color:black
+}
+#main-content{
+    background-color: #EB7D46;
+    padding: 10px;
+    border-radius: 5px;
+}
+.column{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.oneoftwo {
+    flex-direction: row;
+}
+.oneoftwo.reverse .thecontent {
+    flex-direction: row-reverse;
+}
+.oneoftwo, .fouroffive, .oneofsix, .middle-column{
+    background-color: #EBCC95;
+}
+.oneofthree, .twoofthree {
+    background-color: #EB7D46;
+}
+.image {
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+.middle-column li {
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+}
+/* Navigation */
+#main-nav .middle-column ul{
+    padding-left:3px;
+}
+#main-nav li{
+    list-style: none;
+    padding: 5px;
+    background-color: #EB7D46;
+    border:#EBCC95 solid 2px;
+}
+#main-nav a, .middle-column a{
+    color:black;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+#main-nav a:hover{
+    color:rgb(20, 220, 23);
+    border-bottom: 1px solid rgb(20, 220, 23);
+}
+/* Typography */
+header h1{
+    text-align: center;
+}
+footer p{
+    text-align: center;
+}
+.oneofsix{
+    text-align: center;
+}
+.middle-column li{
+    text-decoration: none;
+}
+/* Larger Resolutions */
+@media (min-width: 900px) {
+    .ideaimage {
+        margin-top: -50px;
+        margin-left: 25px;
+        max-width: auto;
+        height: 100%;
+    }
+    .middle-column {
+        width: 16%;
+        text-align: center;
+        background-color: #EBCC95;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .twobytwo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 50%;
+    }
+
+    .twobytwo .box {
+        flex: 1 1;
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: #EBCC95;
+        border-radius: 5px;
+    }
+    .threebytwo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 50%;
+        margin-left: auto;
+    }
+    
+    .threebytwo .box{
+        flex: 0 1 calc(33.33% - 20px);
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .box {
+        flex: 1 ;
+        display: flex;
+        padding: 5px;
+        background-color: #EBCC95;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    #main-nav ul, .oneoffive, .fouroffive, .flex-container, .image, .thecontent, .ideaimage {
+        display:flex;
+    }
+    #main-nav li, .oneofthree, .oneofsix, .oneoffive{
+        flex:1;
+    }
+    .twoofthree, .twoofsix{
+        flex:2;
+    }
+.image, .ideaimage {
+    flex:1;
+    justify-content: center;
+    align-items: center;
+}
+
+.thecontent {
+    display: flex;
+}
+
+.thecontent p {
+    margin: 0;
+    padding: 0;
+    flex: 3;
+}
+
+.thecontent{
+    flex: 1;
+    display: flex;
+    margin: 0;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.thecontent {
+    gap: 5px;
+}
+#idea2 {
+    text-align: left;
+    margin-left: 260px;
+}
+.flex-container {
+    margin-bottom: 20px;
+}
+h3 {
+    margin: 10px 0;
+}
+.image {
+    margin-top: -40px;
+}
+.thecontent {
+    margin-top: 20px;
+}
+#idea2 {
+    margin-left: 300px;
+}
+#ptwo {
+    margin-left: -20px;
+}
+}
+/* Smaller Resolutions */
+@media (max-width: 899px) {
+    .oneoftwo {
+        flex-direction: column;
+        text-align: center;
+    }
+    .thecontent, .image, .thecontent {
+        align-items: center;
+    }
+    .oneoftwo.reverse .thecontent {
+        flex-direction: column;
+    }
+
+    .thecontent {
+        flex-direction: column;
+        align-items: center;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .image {
+        margin: 0 auto;
+        display: block;
+        margin-top: 0;
+    }
+
+    .thecontent {
+        flex-direction: column;
+    }
+
+    .thecontent p {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .flex-container {
+        margin-bottom: 10px;
+    }
+    
+}
