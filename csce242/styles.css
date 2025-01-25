@@ -1,0 +1,84 @@
+/*Structure*/
+body{
+    background-color: blanchedalmond ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#content {
+    background-color: white;
+    width: 70%;
+    margin:auto; /*center*/
+    padding:15px;
+    border: 1px solid darkblue;
+}
+header,footer{
+    background-color: darkblue;
+    padding:5px;
+    color:blanchedalmond
+}
+.assignments {
+    display: flex;
+}
+.box {
+    background-color: #EBCC95;
+    width: 90%;
+    margin: auto;
+    padding:15px;
+    border: 1px solid darkblue;
+}
+.box{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border: solid darkblue 3px;
+}
+.box h3{
+    text-align: center;
+}
+/* Navigation */
+#main-nav ul{
+    padding-left:3px;
+}
+#main-nav li{
+    list-style: none;  /* remove the bullets */
+    display: inline-block;
+    padding: 10px;
+}
+#main-nav a{
+    color:white;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+#main-nav a:hover{
+    color:crimson;
+    border-bottom: 1px solid crimson;
+}
+
+/* Typography */
+header h1, h2{
+    text-align: center;
+}
+footer p{
+    text-align: center;
+}
+.box {
+    color: darkblue;
+}
+@media (min-width: 900px) {
+    .assignments {
+        flex-direction: row;
+    }
+    .box {
+        flex:1;
+    }
+}
+@media (max-width: 899px) {
+    .assignments {
+        flex-direction: column;
+    }
+}
