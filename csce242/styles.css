@@ -69,7 +69,7 @@ footer p{
 .box {
     color: darkblue;
 }
-h3 {
+a {
     text-decoration: none;
 }
 @media (min-width: 900px) {
