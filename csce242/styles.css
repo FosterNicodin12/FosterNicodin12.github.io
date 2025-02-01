@@ -76,7 +76,10 @@ footer p {
 a {
     text-decoration: none;
 }
-
+#hidden {
+    background-color: blanchedalmond;
+    border: none;
+}
 /* Media Queries */
 @media (min-width: 900px) {
     .assignments, .project {
@@ -89,10 +92,6 @@ a {
     }
     .project .box {
         flex: 1;
-    }
-    #hidden {
-        background-color: blanchedalmond;
-        border: none;
     }
 }
 
