@@ -86,7 +86,7 @@ a {
         flex-direction: row;
     }
 
-    .assignments .box {
+    .box, #hidden {
         flex: 1;
         flex: 0 1 calc(33.33% - 20px);
     }
