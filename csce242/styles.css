@@ -82,7 +82,7 @@ a {
 }
 /* Media Queries */
 @media (min-width: 900px) {
-    .assignments, .project {
+    .assignments{
         flex-direction: row;
     }
 
@@ -90,13 +90,10 @@ a {
         flex: 1;
         flex: 0 1 calc(33.33% - 20px);
     }
-    .project .box {
-        flex: 1;
-    }
 }
 
 @media (max-width: 899px) {
-    .assignments, .project {
+    .assignments{
         flex-direction: column;
     }
 
