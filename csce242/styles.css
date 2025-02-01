@@ -1,87 +1,108 @@
-/*Structure*/
-body{
-    background-color: blanchedalmond ;
+/* Structure */
+body {
+    background-color: blanchedalmond;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 #content {
     background-color: white;
     width: 70%;
-    margin:auto; /*center*/
-    padding:15px;
+    margin: auto;
+    padding: 15px;
     border: 1px solid darkblue;
 }
-header,footer{
+
+header, footer {
     background-color: darkblue;
-    padding:5px;
-    color:blanchedalmond
+    padding: 5px;
+    color: blanchedalmond;
 }
-.assignments {
+
+.assignments, .project {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensures spacing between items */
 }
+
 .box {
     background-color: #EBCC95;
-    width: 90%;
-    margin: auto;
-    padding:15px;
-    border: 1px solid darkblue;
-}
-.box{
-    padding: 5px;
-    margin: 5px;
+    padding: 15px;
+    margin: 10px;
+    border: solid darkblue 3px;
     border-radius: 5px;
-}
-.box {
+    color: darkblue;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
-    border: solid darkblue 3px;
+    width: calc(33.33% - 20px); /* Ensures 3 boxes per row */
+    box-sizing: border-box;
 }
-.box h3{
+
+.box h3 {
     text-align: center;
 }
+
 /* Navigation */
-#main-nav ul{
-    padding-left:3px;
+#main-nav ul {
+    padding-left: 3px;
 }
-#main-nav li{
-    list-style: none;  /* remove the bullets */
+
+#main-nav li {
+    list-style: none;
     display: inline-block;
     padding: 10px;
 }
-#main-nav a{
-    color:white;
+
+#main-nav a {
+    color: white;
     text-decoration: none;
     border-bottom: 1px solid transparent;
 }
-#main-nav a:hover{
-    color:crimson;
+
+#main-nav a:hover {
+    color: crimson;
     border-bottom: 1px solid crimson;
 }
 
 /* Typography */
-header h1, h2{
+header h1, h2 {
     text-align: center;
 }
-footer p{
+
+footer p {
     text-align: center;
 }
-.box {
-    color: darkblue;
-}
+
 a {
     text-decoration: none;
 }
+
+/* Media Queries */
 @media (min-width: 900px) {
-    .assignments {
+    .assignments, .project {
         flex-direction: row;
     }
-    .box {
-        flex:1;
+
+    .assignments .box {
+        flex: 1;
+        flex: 0 1 calc(33.33% - 20px);
+    }
+    .project .box {
+        flex: 1;
+    }
+    #hidden {
+        background-color: blanchedalmond;
+        border: none;
     }
 }
+
 @media (max-width: 899px) {
-    .assignments {
+    .assignments, .project {
         flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
