@@ -1,0 +1,319 @@
+/* Global Reset and Box Model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+    --main-header-color: darkgray;
+    --nav-background-color: white;
+    --main-background-color: lightgray;
+    --main-nav-text-color: black;
+    --main-outline-color: red;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+}
+
+/* Body */
+body {
+    background: var(--main-background-color);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: var(--main-header-color);
+    color: var(--main-background-color);
+    text-align: center;
+}
+
+h1 {
+    padding-top: 0px;
+    padding-bottom: 40px;
+}
+
+/* Navigation */
+#main-nav {
+    background-color: var(--nav-background-color);
+    width: 100%;
+}
+
+#main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#main-nav ul li {
+    flex: 1;
+    text-align: center;
+    padding: 15px 0;
+    border: 1px solid var(--main-nav-text-color);
+}
+
+#main-nav a {
+    margin-top: 7px;
+    text-decoration: none;
+    color: var(--main-nav-text-color);
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Main Content */
+main {
+    padding: 30px;
+    align-items: center;
+}
+
+main p {
+    text-align: center;
+}
+
+/* Centering Bottom Image */
+#bottomimage {
+    display: block;
+    margin: 25px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Paragraph Styling */
+main p:first-of-type {
+    margin-bottom: 50px;
+}
+
+main p:last-of-type {
+    margin-top: 50px;
+}
+
+/* Top Screen */
+#topscreen {
+    display: flex;
+    padding: 10px;
+    gap: 1240px;
+}
+
+/* Image Cycle */
+#imagecycle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#imagecycle img {
+    border: 1px solid var(--main-outline-color);
+    padding: 5px;
+    display: block;
+}
+
+/* Autopbox and Aubottombox */
+#autopbox {
+    display: flex;
+}
+
+#aubottombox {
+    display: flex;
+    margin-top: 70px;
+}
+
+#autopbox img {
+    margin-left: 50px;
+    border: 1px var(--main-outline-color) solid;
+}
+
+#aubottombox img {
+    margin-left: 100px;
+    border: 1px var(--main-outline-color) solid;
+    margin-top: 100px;
+}
+
+#aubottombox h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-left: 100px;
+}
+
+#autext {
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 50px;
+}
+
+#autext p {
+    margin-top: 30px;
+}
+
+/* Contact Information */
+#contactinfo {
+    margin-left: -50px;
+    list-style: none;
+}
+
+#contactinfo li {
+    display: flex;
+    text-align: center;
+}
+
+#contactinfo a {
+    align-items: center;
+    text-decoration: none;
+    color: var(--main-nav-text-color);
+    font-size: 25px;
+    gap: 10px;
+}
+
+#contactinfo li img {
+    margin-right: 10px;
+}
+
+/* Contact Text */
+#contacttext {
+    margin-right: 200px;
+}
+
+/* Top Images */
+#topimages {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+#service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#topimages h3, #bottomimages h3 {
+    background: var(--main-header-color);
+    width: 200px;
+}
+
+#bottomimages {
+    display: flex;
+    gap: 140px;
+    justify-content: center;
+    margin-top: 70px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.one {
+    flex: 1;
+    text-align: center;
+}
+
+.half {
+    flex: 0.5;
+}
+
+/* Dropdown Menu */
+.menu-btn {
+    background-color: var(--nav-background-color);
+    color: var(--main-nav-text-color);
+    padding: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: none;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dropdown-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: var(--main-background-color);
+    min-width: 110px;
+    z-index: 1;
+}
+
+.links,
+.links-hidden {
+    display: inline-block;
+    color: var(--nav-background-color);
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.links-hidden {
+    display: block;
+}
+
+.links {
+    display: inline-block;
+}
+
+#main-nav a:hover,
+.links-hidden:hover,
+.links:hover {
+    transform: scale(1.2);
+}
+
+.dropdown-menu:hover .menu-content {
+    display: block;
+}
+
+/* Join Section */
+#join {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#hireform {
+    margin-top: 25px;
+}
+
+/* Boxaround */
+.boxaround {
+    border: 2px solid var(--main-nav-text-color);
+    border-radius: 15px;
+    padding: 20px;
+    background-color: var(--nav-background-color);
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Ratecalc Section */
+#ratecalc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.rate {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+#headerratecalc {
+    text-align: center;
+}
+
+#headerratecalc h2 {
+    padding-bottom: 40px;
+}

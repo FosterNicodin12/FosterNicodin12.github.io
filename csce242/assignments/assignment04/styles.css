@@ -4,24 +4,27 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+:root {
+    --main-background-color: #CDECEF;
+}
 /* Body Styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f5f5f5;
+    background-color: var(--main-background-color);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-
+.sad {
+    background:purple;
+}
 /* Header Styling */
 header {
     width: 100%;
     background-color: black;
     color: white;
 }
-
 #garnetbar {
     background-color: rgb(115, 0, 10);
 }
