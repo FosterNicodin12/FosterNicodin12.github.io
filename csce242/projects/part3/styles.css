@@ -12,8 +12,15 @@
     --main-background-color: lightgray;
     --main-nav-text-color: black;
     --main-outline-color: red;
+    --main-rack-color: darkgray;
+    --main-aisle-color: red;
+    --main-office-color: black;
+    --main-open-area: gray;
+    --main-dock: blue;
 }
-
+h2 {
+    text-align: center;
+}
 /* Footer */
 footer {
     text-align: center;
@@ -130,23 +137,6 @@ main p:last-of-type {
     margin-top: 70px;
 }
 
-#autopbox img {
-    margin-left: 50px;
-    border: 1px var(--main-outline-color) solid;
-}
-
-#aubottombox img {
-    margin-left: 100px;
-    border: 1px var(--main-outline-color) solid;
-    margin-top: 100px;
-}
-
-#aubottombox h2 {
-    text-align: center;
-    font-size: 40px;
-    margin-left: 100px;
-}
-
 #autext {
     text-align: center;
     margin-left: 150px;
@@ -180,11 +170,6 @@ main p:last-of-type {
     margin-right: 10px;
 }
 
-/* Contact Text */
-#contacttext {
-    margin-right: 200px;
-}
-
 /* Top Images */
 #topimages {
     display: flex;
@@ -206,9 +191,7 @@ main p:last-of-type {
 
 #bottomimages {
     display: flex;
-    gap: 140px;
     justify-content: center;
-    margin-top: 70px;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -316,4 +299,316 @@ main p:last-of-type {
 
 #headerratecalc h2 {
     padding-bottom: 40px;
+}
+
+
+
+.rack { background-color: var(--main-rack-color); }
+.aisle { background-color: var(--main-aisle-color); }
+.dock { background-color: var(--main-dock);  color: white; }
+.office { background-color: var(--main-office-color); color: white; }
+
+/* --------------- Mobile View --------------- */
+@media screen and (min-width: 900px) {
+
+    #autopbox {
+        flex: none;
+    }
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 45px;
+        padding-bottom: 20px;
+    }
+
+    #main-nav {
+        background-color: var(--nav-background-color);
+        width: 100%;
+    }
+    
+    #main-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #main-nav ul li {
+        flex: 1;
+        text-align: center;
+        padding: 10px 0;
+        border: 1px solid var(--main-nav-text-color);
+    }
+    
+    #main-nav a {
+        margin-top: 7px;
+        text-decoration: none;
+        color: var(--main-nav-text-color);
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        justify-content: center;
+        gap: 15px;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    /* Reduce padding and spacing */
+    main {
+        padding: 15px;
+    }
+
+    #autopbox img {
+        margin-left: 50px;
+        border: 1px var(--main-outline-color) solid;
+    }
+
+    #aubottombox img {
+        margin-left: 100px;
+        border: 1px var(--main-outline-color) solid;
+        margin-top: 100px;
+    }
+    
+    #aubottombox h2 {
+        text-align: center;
+        font-size: 40px;
+        margin-left: 100px;
+    }
+
+    #contacttext {
+        margin-right: 200px;
+    }
+
+    /* Image adjustments */
+    #imagecycle {
+        flex-wrap: wrap;
+    }
+
+    #imagecycle img {
+        width: 60px;
+        height: auto;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    #bottomimages {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 60px;
+        gap: 140px;
+    }
+
+    .warehouse {
+        display: grid;
+        grid-template-columns: repeat(12, 100px); /* 6 columns */
+        grid-template-rows: repeat(6, 100px); /* 4 rows */
+        justify-content: center;
+        gap: 5px;
+        padding: 20px;
+        background-color: #ddd;
+    }
+    
+    .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .rack p {
+        display: inline;
+        margin-left: 5px; /* Adds spacing */
+    }
+}
+
+/* --------------- Mobile View (Phones) --------------- */
+@media (max-width: 899px) {
+
+    h1 {
+        font-size: 50px;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    body {
+        font-size: 14px;
+        text-align: center;
+    }
+    #topscreen {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    /* Stack navigation items vertically */
+    #main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    #main-nav ul li {
+        width: 100%;
+        padding: 10px 0;
+    }
+    #user {
+        display: none;
+    }
+
+    /* Adjust top section */
+    #topscreen {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    #clalogo {
+        max-width: 40px;
+    }
+
+    /* Stack navigation items */
+    #main-nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Dropdown menu */
+    .dropdown-menu {
+        text-align: center;
+    }
+
+    .menu-btn {
+        width: 100%;
+    }
+
+    main {
+        padding: 15px;
+        margin-top: 50px;
+    }
+
+    #autopbox, #aubottombox, #ratetopbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #autopbox img, #aubottombox img, #ratetopbox img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    /* Contact section */
+    #aubottomimg {
+        margin-right: auto;
+    }
+
+    #contactimg {
+        max-width: 30px;
+    }
+
+    #contactinfo li {
+        justify-content: center;
+    }
+
+    #topimages, #bottomimages {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #bottomimages {
+        margin-top: 30px;
+    }
+    #topimages h3, #bottomimages h3{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #ratecalc {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .rate {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+
+    #autopbox, #ratetopbox {
+        margin: auto;
+    }
+
+    #contacttext {
+        padding: 30px;
+    }
+
+    #contacttext h2 {
+        font-size: 40px;
+    }
+
+    #contactinfo ul li {
+        font-size: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px;
+        text-align: center;
+    }
+    #autext {
+        text-align: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #autext p {
+        margin-top: 30px;
+    }
+
+    .warehouse {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(6, 100px);
+        justify-content: center;
+        gap: 5px;
+        padding: 5px;
+        background-color: #ddd;
+    }
+    
+    .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .rack p {
+        display: inline;
+        margin-left: 5px;
+    }
 }

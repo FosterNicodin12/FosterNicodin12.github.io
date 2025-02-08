@@ -1,0 +1,113 @@
+/*Structure*/
+
+:root {
+    --star-color: rgb(213, 255, 25);
+}
+body{
+    background-color: lightblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+head h1 {
+    text-align: center;
+}
+#content {
+    background-color: white;
+    width: 70%;
+    margin:auto; /*center*/
+    padding:15px;
+    border: 1px solid darkblue;
+}
+header,footer{
+    background-color: darkblue;
+    padding:5px;
+    color:white
+}
+
+/* Typography */
+header h1{
+    text-align: center;
+}
+footer p{
+    text-align: center;
+}
+.columns {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    background-color: lightpink;
+    border: 1px black;
+    border-radius: 10px;
+    padding: 10px;
+    margin:10px;
+    height: 200px;
+}
+#test {
+    display: flex;
+}
+.one {
+    flex:1;
+}
+#color {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    text-align: left;
+}
+
+#btn-hello, #btn-change {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    text-align: left;
+}
+
+#btn-hello h3 {
+    margin: 0; /* Remove default margin */
+    padding-bottom: 10px; /* Space between heading and text */
+}
+
+/* Creating a Star Shape */
+/* Got all code to draw the star from W3 schools: https://www.w3schools.in/css3/shapes */
+#star {
+    position: relative;
+    width: 0; height: 0; /* Collapses the main element to use borders for shape */
+    margin-left: 0.9em; margin-right: 0.9em; margin-bottom: 1.2em; 
+    border-right: 0.3em solid transparent; 
+    border-bottom: 0.7em solid var(--star-color); /* Base triangle of the star */
+    border-left: 0.3em solid transparent;
+    font-size: 3rem; /* Determines scale */
+}
+
+#star:before,
+#star:after {
+    content: "";
+    width: 0; height: 0; /* Use borders to form the triangles */
+    position: absolute; 
+    top: 0.6em; left: -1em;
+    border-right: 1em solid transparent;
+    border-bottom: 0.7em solid var(--star-color);
+    border-left: 1em solid transparent;
+}
+
+#star:after {
+    transform: rotate(35deg); /* Rotates the after triangle to position it */
+}
+
+#star:before {
+    transform: rotate(-35deg); /* Rotates the before triangle to position it */
+}
+
+#first {
+    display: normal;
+}
+
+#second {
+    display: none;
+}
