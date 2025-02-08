@@ -9,6 +9,11 @@ document.getElementById("colorpick").addEventListener("input", (event) => {
     document.documentElement.style.setProperty("--star-color", color);
 });
 
+document.getElementById("colorpick").addEventListener("input", (event) => {
+    const color = event.target.value;
+    document.documentElement.setAttribute("color", `--star-color: ${color};`);
+});
+
 document.getElementById("btn-change").onclick = () => {
     const firstImage = document.getElementById("first");
     const secondImage = document.getElementById("second");

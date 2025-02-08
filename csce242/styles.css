@@ -95,6 +95,7 @@ a {
 @media (max-width: 899px) {
     .assignments{
         flex-direction: column;
+        margin-right: 20px;
     }
 
     .box {

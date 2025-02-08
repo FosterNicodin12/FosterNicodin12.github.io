@@ -111,3 +111,9 @@ footer p{
 #second {
     display: none;
 }
+
+@media (max-width: 899px) {
+    #test {
+        flex-direction: column;
+    }
+}
