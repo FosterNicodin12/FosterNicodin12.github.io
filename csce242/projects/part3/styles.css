@@ -278,7 +278,12 @@ main p:last-of-type {
     width: 80%;
     margin: 20px auto;
 }
-
+#toggle-nav div {
+    width:25px;
+    height:2px;
+    background-color: red;
+    margin:6px 0;
+}
 /* Ratecalc Section */
 #ratecalc {
     display: flex;
@@ -432,6 +437,9 @@ main p:last-of-type {
     .rack p {
         display: inline;
         margin-left: 5px; /* Adds spacing */
+    }
+    #toggle-nav {
+        display:none;
     }
 }
 
