@@ -27,3 +27,19 @@ document.getElementById("btn-change").onclick = () => {
     }
 };
 
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Function to change heart color
+    const changeHeartColor = (event) => {
+        const heart = document.querySelector(".heart-shape");
+        const newColor = event.target.value; // Get the color from the button's value
+        heart.style.backgroundColor = newColor; // Change the background color of the heart
+        heart.style.setProperty("--heart-color", newColor); // Change the color for pseudo-elements as well
+    };
+
+    // Add event listeners to all color buttons
+    document.querySelectorAll("#buttons button").forEach(button => {
+        button.addEventListener("click", changeHeartColor);
+    });
+});
+

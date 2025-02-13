@@ -1,0 +1,171 @@
+/* ========== Structure ========== */
+:root {
+    --heart-color: white;
+}
+
+body {
+    background-color: lightblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header, footer {
+    background-color: darkblue;
+    padding: 5px;
+    color: white;
+}
+
+/* ========== Typography ========== */
+header h1 {
+    text-align: center;
+}
+
+head h1 {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* ========== Exercise Section ========== */
+#exercise {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 15px;
+    border: 1px solid darkblue;
+    text-align: center;
+    background-color: peachpuff;
+}
+
+/* ========== Heart Shape Styling ========== */
+/* Heart shape sourced from: https://css-tricks.com/snippets/css/css-heart-shape/ */
+.heart-shape {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+    background-color: var(--heart-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.heart-shape:before,
+.heart-shape:after {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    content: '';
+    border-radius: 50%;
+    background-color: var(--heart-color);
+}
+
+.heart-shape:before {
+    bottom: 0px;
+    left: -100px;
+}
+
+.heart-shape:after {
+    top: -100px;
+    right: 0px;
+}
+
+/* ========== Layout & Buttons ========== */
+#travel {
+    width: 100%;
+    align-self: center;
+}
+
+#buttons {
+    margin-bottom: 100px;
+}
+
+.columns {
+    display: flex;
+    justify-content: center;
+    border: 1px black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    height: 500px;
+    align-items: center;
+}
+
+#test {
+    display: flex;
+}
+
+.one {
+    flex: 1;
+}
+
+#travel {
+    display: normal;
+}
+
+#heartcolor {
+    display: none;
+}
+
+/* ========== Exercise Buttons ========== */
+#main-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#main-nav ul li {
+    display: inline;
+}
+
+#main-nav ul li:not(:last-child)::after {
+    content: " | ";
+    color: white;
+    padding: 0 10px;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 899px) {
+    #test {
+        flex-direction: column;
+    }
+    #exercise {
+        width: 80%;
+    }
+    .columns {
+        flex-direction: column;
+        height: auto;
+    }
+    .heart-shape {
+        width: 150px;
+        height: 150px;
+    }
+    .heart-shape:before,
+    .heart-shape:after {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 900px) {
+    #exercise {
+        width: 50%;
+    }
+    .columns {
+        flex-direction: row;
+    }
+    .heart-shape {
+        width: 200px;
+        height: 200px;
+    }
+    .heart-shape:before,
+    .heart-shape:after {
+        width: 200px;
+        height: 200px;
+    }
+}
