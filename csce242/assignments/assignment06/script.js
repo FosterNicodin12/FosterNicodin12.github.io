@@ -29,12 +29,12 @@ const toggleSections = (e) => {
     const heartSection = document.getElementById("heartcolor");
 
     // Check which button was clicked and toggle visibility accordingly
-    if (e.target.id === "e1-btn") {
+    if (e.target.id == "e1-btn" || e.target.id == "e1-btn-hbmenu") {
         travelSection.style.display = "block";  // Show the travel section
-        heartSection.style.display = "none";   // Hide the heart color section
-    } else if (e.target.id === "e2-btn") {
+        heartSection.style.display = "none";    // Hide the heart color section
+    } else if (e.target.id == "e2-btn" || e.target.id == "e2-btn-hbmenu") {
         travelSection.style.display = "none";   // Hide the travel section
-        heartSection.style.display = "block";  // Show the heart color section
+        heartSection.style.display = "block";   // Show the heart color section
     }
 };
 
@@ -71,7 +71,20 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+const toggleHamburger = () => {
+    document.getElementById("nav-items").classList.toggle("hide");
+};
+function toggleMenu() {
+    var menu = document.getElementById('menu');
+    var hamburgerMenu = document.querySelector('.hamburger-menu');
+
+    menu.classList.toggle('active');
+    hamburgerMenu.classList.toggle('active');
+  }
 
 // Add event listeners to the buttons
 document.getElementById("e1-btn").addEventListener("click", toggleSections);
 document.getElementById("e2-btn").addEventListener("click", toggleSections);
+document.getElementById("e1-btn-hbmenu").addEventListener("click", toggleSections);
+document.getElementById("e2-btn-hbmenu").addEventListener("click", toggleSections);
+

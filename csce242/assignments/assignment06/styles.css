@@ -7,7 +7,69 @@ body {
     background-color: lightblue;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+.button-exercise {
+    background-color: white;
+    border: none;
+    color: teal;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
 
+#nav-items ul {
+    text-align: center;
+}
+
+#e1::after {
+    content: "  |"
+}
+
+#hamburger {
+    padding: 10px;
+}
+  
+#hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--a-color);
+    margin: 6px 0;
+}
+
+#nav-items li {
+    color: teal;
+    text-align: center;
+    display: block;
+}
+  
+ul {
+    list-style-type: none;
+  }
+  .hamburger-menu {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  .hamburger-menu.active {
+    transform: rotate(180deg);
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu.active {
+    display: block;
+  }
+
+  .menu-item-1,
+  .menu-item-2 {
+    padding: 10px;
+    background-color: peachpuff;
+    border: 1px solid darkblue;
+    text-align: center;
+    text-decoration: none;
+  }
 header, footer {
     background-color: darkblue;
     padding: 5px;
@@ -38,7 +100,6 @@ footer p {
     text-align: center;
     background-color: peachpuff;
 }
-
 /* ========== Heart Shape Styling ========== */
 /* Heart shape sourced from: https://css-tricks.com/snippets/css/css-heart-shape/ */
 .heart-shape {
@@ -72,7 +133,12 @@ footer p {
     top: -100px;
     right: 0px;
 }
-
+#hamburger div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
 /* ========== Layout & Buttons ========== */
 #travel {
     width: 100%;
@@ -131,6 +197,9 @@ footer p {
 
 /* ========== Responsive Design ========== */
 @media (max-width: 899px) {
+    #hamburger {
+        display: none;
+    }
     #test {
         flex-direction: column;
     }
@@ -150,9 +219,15 @@ footer p {
         width: 150px;
         height: 150px;
     }
+    #main-nav {
+        display: none;
+    }
 }
 
 @media (min-width: 900px) {
+    .hamburger-menu {
+        display: none;
+    }
     #exercise {
         width: 50%;
     }
@@ -167,5 +242,11 @@ footer p {
     .heart-shape:after {
         width: 200px;
         height: 200px;
+    }
+    .hide-small {
+        display: block;
+    }
+    #hamburger {
+        display: none;
     }
 }
