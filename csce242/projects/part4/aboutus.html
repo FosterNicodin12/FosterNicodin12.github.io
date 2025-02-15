@@ -12,25 +12,30 @@
                 <h3 id="user">nnicodin</h3>
             </div>
             <h1>About Us</h1>
-            <nav id="main-nav">
-                <div id="toggle-nav">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
+            <div class="hamburger-menu" onclick="toggleMenu()">⧩</div>
+            <div class="menu" id="menu">
                 <ul>
-                    <li><a href="index.html"><img src="images/nav.png">Home</a></li>
-                    <li><a href="aboutus.html"> <img src="images/nav.png">About Us</a></li>
-                    <li><a href="services.html"><img src="images/nav.png">Services</a></li>
-                    <li><a href="trucking.html"><img src="images/nav.png">Trucking</a></li>
-                    <li><a href="currentinventory.html"><img src="images/nav.png">Current Inventory</a></li>
+                    <li><a href="index.html"><img src="images/home.png">Home</a></li>
+                    <li><a href="aboutus.html"> <img src="images/aboutus.png">About Us</a></li>
+                    <li><a href="services.html"><img src="images/services.png">Services</a></li>
+                    <li><a href="trucking.html"><img src="images/truck.png">Trucking</a></li>
+                    <li><a href="currentinventory.html"><img src="images/box.png">Current Inventory</a></li>
+                </ul>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html"><img src="images/home.png">Home</a></li>
+                    <li><a href="aboutus.html"> <img src="images/aboutus.png">About Us</a></li>
+                    <li><a href="services.html"><img src="images/services.png">Services</a></li>
+                    <li><a href="trucking.html"><img src="images/truck.png">Trucking</a></li>
+                    <li><a href="currentinventory.html"><img src="images/box.png">Current Inventory</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section id="autopbox" class="boxaround">
                 <section>
-                    <img id="ourstafftopimg" src="images/ourstaff.png" alt="First Row">
+                    <img id="ourstafftopimg" src="images/about.png" alt="First Row">
                 </section>
                 <div id="autext">
                     <h2>Our Staff</h2>
@@ -61,6 +66,7 @@
                         <img id="aubottomimg" src="images/ourstaffbottom.png" alt="First Row">
                     </section>
             </section>
+            <script src="script.js"></script>
         </main>
         <footer>
         </footer>

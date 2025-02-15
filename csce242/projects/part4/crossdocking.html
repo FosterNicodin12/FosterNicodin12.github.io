@@ -12,25 +12,30 @@
                 <h3>nnicodin</h3>
             </div>
             <h1>Cross Docking</h1>
-            <nav id="main-nav">
-                <div id="toggle-nav">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
+            <div class="hamburger-menu" onclick="toggleMenu()">⧩</div>
+            <div class="menu" id="menu">
                 <ul>
-                    <li><a href="index.html"><img src="images/nav.png">Home</a></li>
-                    <li><a href="aboutus.html"> <img src="images/nav.png">About Us</a></li>
-                    <li><a href="services.html"><img src="images/nav.png">Services</a></li>
-                    <li><a href="trucking.html"><img src="images/nav.png">Trucking</a></li>
-                    <li><a href="currentinventory.html"><img src="images/nav.png">Current Inventory</a></li>
+                    <li><a href="index.html"><img src="images/home.png">Home</a></li>
+                    <li><a href="aboutus.html"> <img src="images/aboutus.png">About Us</a></li>
+                    <li><a href="services.html"><img src="images/services.png">Services</a></li>
+                    <li><a href="trucking.html"><img src="images/truck.png">Trucking</a></li>
+                    <li><a href="currentinventory.html"><img src="images/box.png">Current Inventory</a></li>
+                </ul>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html"><img src="images/home.png">Home</a></li>
+                    <li><a href="aboutus.html"> <img src="images/aboutus.png">About Us</a></li>
+                    <li><a href="services.html"><img src="images/services.png">Services</a></li>
+                    <li><a href="trucking.html"><img src="images/truck.png">Trucking</a></li>
+                    <li><a href="currentinventory.html"><img src="images/box.png">Current Inventory</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section id="autopbox">
                 <section>
-                    <img src="images/rates.png" alt="First Row">
+                    <img id="crossimg" src="images/crossdocking.png" alt="First Row">
                 </section>
                 <div id="autext"  class="boxaround">
                     <h2>Cross Docking Options</h2>
@@ -75,6 +80,7 @@
                 <p>Your estimated rate is: </p>
                 <p>Note: your selected items and inputted data will be saved while on the site and carry over to all pages under the rates tab.</p>
             </section>
+            <script src="script.js"></script>
         </main>
         <footer>
             <p>&copy; myname</p>

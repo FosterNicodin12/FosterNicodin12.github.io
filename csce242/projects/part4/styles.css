@@ -21,6 +21,45 @@
 h2 {
     text-align: center;
 }
+#hamburger {
+    padding: 10px;
+}
+  
+#hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--a-color);
+    margin: 6px 0;
+}
+ul {
+    list-style-type: none;
+  }
+  .hamburger-menu {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  .hamburger-menu.active {
+    transform: rotate(180deg);
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu.active {
+    display: block;
+  }
+
+  .menu-item-1,
+  .menu-item-2 {
+    padding: 10px;
+    background-color: peachpuff;
+    border: 1px solid darkblue;
+    text-align: center;
+    text-decoration: none;
+  }
 /* Footer */
 footer {
     text-align: center;
@@ -48,12 +87,12 @@ h1 {
 }
 
 /* Navigation */
-#main-nav {
+#main-nav, .menu {
     background-color: var(--nav-background-color);
     width: 100%;
 }
 
-#main-nav ul {
+#main-nav ul, .menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -61,14 +100,14 @@ h1 {
     justify-content: space-evenly;
 }
 
-#main-nav ul li {
+#main-nav ul li, .menu ul li {
     flex: 1;
     text-align: center;
     padding: 15px 0;
     border: 1px solid var(--main-nav-text-color);
 }
 
-#main-nav a {
+#main-nav a, .menu a {
     margin-top: 7px;
     text-decoration: none;
     color: var(--main-nav-text-color);
@@ -253,7 +292,9 @@ main p:last-of-type {
 
 #main-nav a:hover,
 .links-hidden:hover,
-.links:hover {
+.links:hover, .menu a:hover,
+.links-hidden:hover,
+.links:hover  {
     transform: scale(1.2);
 }
 
@@ -317,7 +358,12 @@ main p:last-of-type {
 
 /* --------------- Mobile View --------------- */
 @media screen and (min-width: 900px) {
-
+    .hamburger-menu {
+        display: none;
+    }
+    #hamburger {
+        display: none;
+    }
     #autopbox {
         flex: none;
     }
@@ -330,12 +376,12 @@ main p:last-of-type {
         padding-bottom: 20px;
     }
 
-    #main-nav {
+    #main-nav, .menu {
         background-color: var(--nav-background-color);
         width: 100%;
     }
     
-    #main-nav ul {
+    #main-nav ul, .menu ul {
         list-style: none;
         padding: 0;
         margin: 0;
@@ -343,14 +389,14 @@ main p:last-of-type {
         justify-content: space-evenly;
     }
     
-    #main-nav ul li {
+    #main-nav ul li, .menu ul li {
         flex: 1;
         text-align: center;
         padding: 10px 0;
         border: 1px solid var(--main-nav-text-color);
     }
     
-    #main-nav a {
+    #main-nav a, .menu a {
         margin-top: 7px;
         text-decoration: none;
         color: var(--main-nav-text-color);
@@ -443,11 +489,16 @@ main p:last-of-type {
     #toggle-nav {
         display:none;
     }
+    #crossimg {
+        margin-top: 40px;
+    }
 }
 
 /* --------------- Mobile View (Phones) --------------- */
 @media (max-width: 899px) {
-
+    #main-nav {
+        display: none;
+    }
     h1 {
         font-size: 50px;
     }
@@ -466,11 +517,11 @@ main p:last-of-type {
     }
 
     /* Stack navigation items vertically */
-    #main-nav ul {
+    #main-nav ul, .menu ul {
         flex-direction: column;
         align-items: center;
     }
-    #main-nav ul li {
+    #main-nav ul li, .menu ul {
         width: 100%;
         padding: 10px 0;
     }
@@ -496,7 +547,7 @@ main p:last-of-type {
     }
 
     /* Stack navigation items */
-    #main-nav ul {
+    #main-nav ul, .menu ul {
         flex-direction: column;
         text-align: center;
     }
