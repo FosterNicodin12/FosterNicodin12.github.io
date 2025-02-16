@@ -18,6 +18,9 @@
     --main-open-area: gray;
     --main-dock: blue;
 }
+#service {
+    color: var(--main-outline-color);
+}
 h2 {
     text-align: center;
 }
@@ -349,6 +352,10 @@ main p:last-of-type {
     padding-bottom: 40px;
 }
 
+.employeediv {
+    margin-left: 50px;
+    margin-right: 50px;
+}
 
 
 .rack { background-color: var(--main-rack-color); }
@@ -360,6 +367,17 @@ main p:last-of-type {
 @media screen and (min-width: 900px) {
     .hamburger-menu {
         display: none;
+    }
+    #ourstafftopimg {
+        margin-top: 100px;
+    }
+    #transloadimg {
+        margin-top: 50px;
+        margin-right: -50px;
+    }
+    #localimg {
+        margin-top: 80px;
+        margin-right: -50px;
     }
     #hamburger {
         display: none;
@@ -416,12 +434,10 @@ main p:last-of-type {
 
     #autopbox img {
         margin-left: 50px;
-        border: 1px var(--main-outline-color) solid;
     }
 
     #aubottombox img {
         margin-left: 100px;
-        border: 1px var(--main-outline-color) solid;
         margin-top: 100px;
     }
     
@@ -432,7 +448,7 @@ main p:last-of-type {
     }
 
     #contacttext {
-        margin-right: 200px;
+        margin-right: 150px;
     }
 
     /* Image adjustments */
@@ -491,6 +507,9 @@ main p:last-of-type {
     }
     #crossimg {
         margin-top: 40px;
+    }
+    .employee {
+        display: flex;
     }
 }
 
