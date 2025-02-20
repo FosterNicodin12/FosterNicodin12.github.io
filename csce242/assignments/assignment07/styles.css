@@ -1,0 +1,85 @@
+/* ========== Structure ========== */
+:root {
+    --heart-color: white;
+}
+
+body {
+    background-color: lightblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header, footer {
+    background-color: darkblue;
+    padding: 5px;
+    color: white;
+}
+#showladder {
+    margin-top: 40px;
+    margin-left: 650px;
+}
+#ladder {
+    margin: auto;
+    height: 500px;
+    width: 100px;
+    background-color: white;
+    border-left: solid 2px black;
+    border-right: solid 2px black;
+}
+hr {
+    border-top: solid 2px black;
+    margin-top: 50px;
+}
+#right {
+    position: absolute;
+    bottom: -150px; /* Places it at the bottom of the ladder */
+    left: 50%; /* Centers the image */
+    transform: translateX(-50%); /* Adjusts for exact centering */
+    width: 90px; /* Adjust size as needed */
+}
+#ladderassignment {
+    margin-bottom: 100px;
+}
+/* ========== Typography ========== */
+header h1 {
+    text-align: center;
+}
+
+head h1 {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+.columns {
+    display: flex;
+    justify-content: center;
+    border: 1px black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    height: 500px;
+    align-items: center;
+}
+
+.one {
+    flex: 1;
+}
+
+.hidden {
+    display: none;
+}
+/* ========== Responsive Design ========== */
+@media (max-width: 899px) {
+    .columns {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media (min-width: 900px) {
+    .columns {
+        flex-direction: row;
+    }
+}
