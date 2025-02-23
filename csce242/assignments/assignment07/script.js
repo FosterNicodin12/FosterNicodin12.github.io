@@ -1,30 +1,25 @@
 document.getElementById("showladder").onclick = () => {
     let ladder = document.getElementById("ladder");
-    let stickFigure = document.getElementById("right"); // The stick figure image
-    let isRightStep = true; // Track whether it's right or left step
-    let maxHeight = 375;
-    let currentPosition = -150; // Starting position (in px)
+    let stickFigure = document.getElementById("right");
+    let isRightStep = true;
+    const maxHeight = 425;
+    let currentPosition = -50;
 
-    // Show the ladder
     ladder.classList.remove("hidden");
 
-    // Start switching images after 0.5 seconds
+    
     setTimeout(() => {
-        setInterval(() => {
+        const interval = setInterval(() => {
             if (currentPosition >= maxHeight) {
-                clearInterval(interval); // Stop the interval once the figure reaches the top
-                return; // Break the function completely
+                clearInterval(interval);
+                return;
             }
-            if (isRightStep) {
-                stickFigure.src = "images/left.png";
-            } else {
-                stickFigure.src = "images/right.png";
-            }
-            isRightStep = !isRightStep; // Toggle step
+            stickFigure.src = isRightStep ? "images/left.png" : "images/right.png";
+            isRightStep = !isRightStep;
             if (currentPosition < maxHeight) {
                 currentPosition += 50;
                 stickFigure.style.bottom = `${currentPosition}px`;
             }
-        }, 500); // Switch every 0.5 seconds (500ms)
+        }, 500);
     }, 500);
 };
