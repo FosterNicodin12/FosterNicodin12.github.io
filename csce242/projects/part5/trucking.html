@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>CLA Warehouse Manager</title>
+    </head>
+    <body>
+        <div id="content">
+        <header>
+            <div id="topscreen">
+                <img src="images/cla.png">
+                <h3 id="user">nnicodin</h3>
+            </div>
+            <h1>Trucking</h1>
+            <div class="hamburger-menu" onclick="toggleMenu()">⧩</div>
+            <div class="menu" id="menu">
+                <ul>
+                    <li><a href="index.html"><img src="images/home.png">Home</a></li>
+                    <li><a href="aboutus.html"> <img src="images/aboutus.png">About Us</a></li>
+                    <li><a href="services.html"><img src="images/services.png">Services</a></li>
+                    <li><a href="trucking.html"><img src="images/truck.png">Trucking</a></li>
+                    <li><a href="currentinventory.html"><img src="images/box.png">Current Inventory</a></li>
+                </ul>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html"><img src="images/home.png">Home</a></li>
+                    <li><a href="aboutus.html"> <img src="images/aboutus.png">About Us</a></li>
+                    <li><a href="services.html"><img src="images/services.png">Services</a></li>
+                    <li><a href="trucking.html"><img src="images/truck.png">Trucking</a></li>
+                    <li><a href="currentinventory.html"><img src="images/box.png">Current Inventory</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="autopbox" class="boxaround">
+                <section>
+                    <img src="images/trucking.jpg" alt="First Row">
+                </section>
+                <div id="autext">
+                    <h2>Want to join our team?</h2>
+                    <p>At our company, we’re more than just a trucking service—we’re a family of dedicated professionals committed to providing top-notch logistics solutions. If you’re looking 
+                        for reliable transportation services for your freight, we’ve got you covered with a fleet of well-maintained trucks and a team of experienced drivers who prioritize safety,
+                         efficiency, and customer satisfaction. From local drayage to long-haul routes, we specialize in delivering your goods on time and in excellent condition.
+
+                        But we’re not just looking to serve customers; we’re also looking to grow our team! If you’re a skilled and motivated truck driver, we want you on our team. We offer 
+                        competitive pay, flexible schedules, and a supportive work environment where safety and respect are always top priorities. Whether you’re a seasoned pro or new to the 
+                        road, we provide the training, equipment, and resources you need to succeed.
+                        
+                        Join a company that values your expertise and hard work. With opportunities for advancement, steady work, and a strong commitment to work-life balance, we’re here to 
+                        help you thrive. Whether you’re looking for a long-term career or just need a reliable trucking partner, we’re ready to work together and make every mile count. Let’s 
+                        drive success forward—together!
+                    </p>
+                    <p>We require at least 5 years of CDL experience along with passing a drug tests.</p>
+                </div>
+            </section>
+            <section id="join" class="boxaround">
+                <h2>Please provide your information if you are interested in joining and meet our requirements</h2>
+                <div>
+                    <form id="hireform" class="form-container">
+                        <div class="form-group">
+                            <label for="fname">First Name:</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your first name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lname">Last Name:</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="text" id="email" name="email" placeholder="Your email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="XXX-XXX-XXXX" pattern="^[0-9]{3}-[0-9]{3}-[0-9]{4}$" title="Enter a phone number in the format 123-456-7890">
+                        </div>
+                    
+                    </form>
+                </div>
+            </section>
+            <script src="script.js"></script>
+        </main>
+        <footer>
+            <p>&copy; myname</p>
+        </footer>
+        </div>
+    </body>
+</html>
