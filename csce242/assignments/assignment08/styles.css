@@ -22,7 +22,9 @@ header, footer {
     padding: 5px;
     color: white;
 }
-
+#clownaround {
+    margin-left: -50px;
+}
 .popup {
     display: none;
     position: fixed;
@@ -31,15 +33,16 @@ header, footer {
     transform: translate(-50%, -50%);
     width: 400px;
     background: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
     text-align: center;
     border-radius: 8px;
     z-index: 1000;
+    height: 400px;
 }
 
 .popup-content {
     position: relative;
+    width :auto;
 }
 
 .close-btn {
@@ -87,7 +90,7 @@ footer p {
 .hidden {
     display: none;
 }
-/* ========== Responsive Design ========== */
+/* ========== Media Design ========== */
 @media (max-width: 899px) {
     .columns {
         flex-direction: column;
