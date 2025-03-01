@@ -1,12 +1,12 @@
 // Define Pizza class
 class Pizza {
     constructor(title, ingredients, sauce, cheese, price, pic, location) {
-      this.title = title;
-      this.ingredients = ingredients;
-      this.sauce = sauce;
-      this.cheese = cheese;
-      this.price = price;
-      this.pic = pic;
+        this.title = title;
+        this.ingredients = ingredients;
+        this.sauce = sauce;
+        this.cheese = cheese;
+        this.price = price;
+        this.pic = pic;
     }
 }
 
@@ -64,51 +64,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 document.querySelector("#pucheese").innerHTML = `<strong>Cheese:</strong> ${clickedPizza.sauce}`;
                 document.querySelector("#puprice").innerHTML = `<strong>Price:</strong> ${clickedPizza.price}`;
                 document.querySelector("#puimg").src = clickedPizza.pic;
-                /*
-                document.querySelector("puingredients").innerHTML += clickedPizza.ingredients;
-                popupTitle.textContent = clickedPizza.title;
-                popupIngredients.textContent = `Ingredients: ${clickedPizza.ingredients}`;
-                popupSauce.textContent = `Sauce: ${clickedPizza.sauce}`;
-                popupCheese.textContent = `Cheese: ${clickedPizza.cheese}`;
-                popupPrice.textContent = `Price: ${clickedPizza.price}`;
-                popupImage.src = clickedPizza.pic;
-                */
 
                 // Show the popup
                 popup.style.display = "block";
-            } else {
-                console.error("Pizza not found for label:", label);
             }
             // Show the popup
             popup.style.display = "block";
         };
     });
 });
-
-
-/*
-document.addEventListener("DOMContentLoaded", () => {
-    const popup = document.getElementById("popup");
-    const popupTitle = document.getElementById("putitle");
-    const popupIngredients = document.getElementById("puingredients");
-    const popupSauce = document.getElementById("pusauce");
-    const popupCheese = document.getElementById("pucheese");
-    const popupPrice = document.getElementById("puprice");
-    const popupImage = document.getElementById("popup-image");
-    const closeBtn = document.querySelector(".w3-button");
-});
-
-document.querySelectorAll(".pizza section").forEach((slice)=>{
-    slice.onclick = () => {
-        const label = slice.querySelector("h3").innerHTML;
-        const imgSRC = slice.querySelector("img").src;
-        document.getElementById("popup").style.display="block";
-        document.querySelector("#popup h2").innerHTML = label;
-        document.querySelector("#popup img").src = imgSRC;
-        modalContent.append(this.paragraph("Type", this.type));
-        modalContent.append(this.paragraph("Height", this.height));
-        modalContent.append(this.paragraph("Age", this.age));
-        modalContent.append(this.paragraph("Location", this.location));
-    }
-});
-*/
