@@ -1,0 +1,80 @@
+[
+    {
+      "bay_number": "A1",
+      "company": "Evergreen Logistics",
+      "picture": "image_url_A1.jpg",
+      "container_number": "CNA123456",
+      "is_full": true
+    },
+    {
+      "bay_number": "B1",
+      "company": "None",
+      "picture": "image_url_B1.jpg",
+      "container_number": "",
+      "is_full": false
+    },
+    {
+      "bay_number": "C1",
+      "company": "Swift Freight Co.",
+      "picture": "image_url_C1.jpg",
+      "container_number": "CNC123456",
+      "is_full": true
+    },
+    {
+      "bay_number": "D1",
+      "company": "None",
+      "picture": "image_url_D1.jpg",
+      "container_number": "",
+      "is_full": false
+    },
+    {
+      "bay_number": "E1",
+      "company": "Titan Cargo Solutions",
+      "picture": "image_url_E1.jpg",
+      "container_number": "CNE123456",
+      "is_full": true
+    },
+    {
+      "bay_number": "F1",
+      "company": "Blue Ocean Shipping",
+      "picture": "image_url_F1.jpg",
+      "container_number": "CNF123456",
+      "is_full": true
+    },
+    {
+      "bay_number": "G1",
+      "company": "None",
+      "picture": "image_url_G1.jpg",
+      "container_number": "",
+      "is_full": false
+    },
+    {
+      "bay_number": "H1",
+      "company": "Redwood Express",
+      "picture": "image_url_H1.jpg",
+      "container_number": "CNH123456",
+      "is_full": true
+    },
+    {
+      "bay_number": "I1",
+      "company": "None",
+      "picture": "image_url_I1.jpg",
+      "container_number": "",
+      "is_full": false
+    },
+    {
+      "bay_number": "J1",
+      "company": "Silverline Transport",
+      "picture": "image_url_J1.jpg",
+      "container_number": "CNJ123456",
+      "is_full": true
+    },
+    {
+      "bay_number": "K1",
+      "company": "None",
+      "picture": "image_url_K1.jpg",
+      "container_number": "",
+      "is_full": false
+    }
+  ]
+  
