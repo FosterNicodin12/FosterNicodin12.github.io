@@ -514,30 +514,40 @@ input[type="submit"] {
         gap: 140px;
     }
 
-    .warehouse {
-        display: grid;
-        grid-template-columns: repeat(12, 100px); /* 6 columns */
-        grid-template-rows: repeat(6, 100px); /* 4 rows */
-        justify-content: center;
-        gap: 5px;
-        padding: 20px;
-        background-color: #ddd;
-    }
-    
-    .section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border: 2px solid black;
-        font-size: 10px;
-        font-weight: bold;
-        text-align: center;
-    }
-    
-    .rack p {
-        display: inline;
-        margin-left: 5px; /* Adds spacing */
+/* Ensure text fits within warehouse boxes */
+.warehouse {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 150px);
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
+    background-color: #ddd;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px; /* Ensures padding inside each section */
+    overflow: hidden; /* Ensures content does not overflow */
+    text-overflow: ellipsis; /* Adds ellipsis for overflowed text */
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+/* If needed, allow text to wrap if it's too long */
+.section p {
+    white-space: normal; /* Allows text to wrap within the box */
+    word-wrap: break-word; /* Breaks long words to fit in the box */
+}
+
+    .warehouse p {
+        margin-top: 2px;
     }
     #toggle-nav {
         display:none;
