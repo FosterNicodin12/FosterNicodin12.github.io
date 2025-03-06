@@ -711,7 +711,7 @@ input[type="submit"] {
     .warehouse {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(6, 100px);
+        grid-template-rows: repeat(6, 150px);
         justify-content: center;
         gap: 5px;
         padding: 5px;
