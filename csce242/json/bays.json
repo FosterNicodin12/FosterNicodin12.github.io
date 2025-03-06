@@ -280,7 +280,7 @@
     "contents": "rack"
   },
   {
-    "bay_number": "Dock 3",
+    "bay_number": "Dock 2",
     "company": "",
     "picture": "",
     "container_number": "",
@@ -384,6 +384,77 @@
     "contents": "dock"
   },
   {
+    "bay_number": "Aisle",
+    "company": "",
+    "picture": "",
+    "container_number": "",
+    "is_full": false,
+    "contents": "aisle"
+  },
+  {
+    "bay_number": "Aisle",
+    "company": "",
+    "picture": "",
+    "container_number": "",
+    "is_full": false,
+    "contents": "aisle"
+  },  {
+    "bay_number": "Aisle",
+    "company": "",
+    "picture": "",
+    "container_number": "",
+    "is_full": false,
+    "contents": "aisle"
+  },  {
+    "bay_number": "Aisle",
+    "company": "",
+    "picture": "",
+    "container_number": "",
+    "is_full": false,
+    "contents": "aisle"
+  },  {
+    "bay_number": "Aisle",
+    "company": "",
+    "picture": "",
+    "container_number": "",
+    "is_full": false,
+    "contents": "aisle"
+  },  {
+    "bay_number": "Aisle",
+    "company": "",
+    "picture": "",
+    "container_number": "",
+    "is_full": false,
+    "contents": "aisle"
+  },  {
+    "bay_number": "Aisle",
+    "company": "",
+    "picture": "",
+    "container_number": "",
+    "is_full": false,
+    "contents": "aisle"
+  },  {
+    "bay_number": "Aisle",
+    "company": "",
+    "picture": "",
+    "container_number": "",
+    "is_full": false,
+    "contents": "aisle"
+  },  {
+    "bay_number": "Aisle",
+    "company": "",
+    "picture": "",
+    "container_number": "",
+    "is_full": false,
+    "contents": "aisle"
+  },  {
+    "bay_number": "Aisle",
+    "company": "",
+    "picture": "",
+    "container_number": "",
+    "is_full": false,
+    "contents": "aisle"
+  },  {
     "bay_number": "Aisle",
     "company": "",
     "picture": "",
