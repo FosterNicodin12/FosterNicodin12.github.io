@@ -53,8 +53,6 @@ const createBayHTML = (bay) => {
     bayElement.innerHTML = `
         <p>${bay.bay_number}</p>
         <p>ID: ${bay.container_number || "No container"}</p>
-        ${bay.is_full ? "<p>Status: Full</p>" : "<p>Status: Empty</p>"}
-        ${bay.company ? `<p>Company: ${bay.company}</p>` : ""}
     `;
     
     return bayElement;
