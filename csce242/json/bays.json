@@ -104,7 +104,7 @@
     "contents": "open"
   },
   {
-    "bay_number": "Aisle 1",
+    "bay_number": "Aisle",
     "company": "",
     "picture": "",
     "container_number": "",
@@ -112,7 +112,7 @@
     "contents": "aisle"
   },
   {
-    "bay_number": "Aisle 2",
+    "bay_number": "Aisle",
     "company": "",
     "picture": "",
     "container_number": "",
@@ -120,7 +120,63 @@
     "contents": "aisle"
   },
   {
-    "bay_number": "Aisle 3",
+    "bay_number": "Aisle",
+    "company": "",
+    "picture": "",
+    "container_number": "",
+    "is_full": false,
+    "contents": "aisle"
+  },  {
+    "bay_number": "Aisle",
+    "company": "",
+    "picture": "",
+    "container_number": "",
+    "is_full": false,
+    "contents": "aisle"
+  },  {
+    "bay_number": "Aisle",
+    "company": "",
+    "picture": "",
+    "container_number": "",
+    "is_full": false,
+    "contents": "aisle"
+  },  {
+    "bay_number": "Aisle",
+    "company": "",
+    "picture": "",
+    "container_number": "",
+    "is_full": false,
+    "contents": "aisle"
+  },  {
+    "bay_number": "Aisle",
+    "company": "",
+    "picture": "",
+    "container_number": "",
+    "is_full": false,
+    "contents": "aisle"
+  },  {
+    "bay_number": "Aisle",
+    "company": "",
+    "picture": "",
+    "container_number": "",
+    "is_full": false,
+    "contents": "aisle"
+  },  {
+    "bay_number": "Aisle",
+    "company": "",
+    "picture": "",
+    "container_number": "",
+    "is_full": false,
+    "contents": "aisle"
+  },  {
+    "bay_number": "Aisle",
+    "company": "",
+    "picture": "",
+    "container_number": "",
+    "is_full": false,
+    "contents": "aisle"
+  },  {
+    "bay_number": "Aisle",
     "company": "",
     "picture": "",
     "container_number": "",
