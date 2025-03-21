@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>CLA Warehouse Manager</title>
+    </head>
+    <body>
+        <div id="content">
+        <header>
+            <div id="topscreen">
+                <img src="images/cla.png">
+                <h3 id="user">nnicodin</h3>
+            </div>
+            <h1>Live Inventory and Location</h1>
+            <div class="hamburger-menu" onclick="toggleMenu()">⧩</div>
+            <div class="menu" id="menu">
+                <ul>
+                    <li><a href="index.html"><img src="images/home.png">Home</a></li>
+                    <li><a href="aboutus.html"> <img src="images/aboutus.png">About Us</a></li>
+                    <li><a href="services.html"><img src="images/services.png">Services</a></li>
+                    <li><a href="trucking.html"><img src="images/truck.png">Trucking</a></li>
+                    <li><a href="currentinventory.html"><img src="images/box.png">Current Inventory</a></li>
+                </ul>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html"><img src="images/home.png">Home</a></li>
+                    <li><a href="aboutus.html"> <img src="images/aboutus.png">About Us</a></li>
+                    <li><a href="services.html"><img src="images/services.png">Services</a></li>
+                    <li><a href="trucking.html"><img src="images/truck.png">Trucking</a></li>
+                    <li><a href="currentinventory.html"><img src="images/box.png">Current Inventory</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <p class="boxaround">Below is a live and accurate description of what our warehouse is holding.  The gray represents our bays, if full they will have the container number in it.
+                The red represents the aisles and the blue represents our loading docks.
+            </p>
+            <div class="warehouse" id="bay-container">
+                
+            </div>
+        </main>
+        <footer>
+            <p>&copy; myname</p>
+        </footer>
+        </div>
+        <script src="json.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
