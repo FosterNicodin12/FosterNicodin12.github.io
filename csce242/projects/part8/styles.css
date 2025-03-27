@@ -1,0 +1,763 @@
+/* Global Reset and Box Model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+    --main-header-color: darkgray;
+    --nav-background-color: white;
+    --main-background-color: lightblue;
+    --main-nav-text-color: black;
+    --main-outline-color: red;
+    --main-rack-color: darkgray;
+    --main-aisle-color: red;
+    --main-office-color: black;
+    --main-open-area: gray;
+    --main-dock: blue;
+}
+#service {
+    color: var(--main-outline-color);
+}
+h2 {
+    text-align: center;
+}
+#hamburger {
+    padding: 10px;
+}
+  
+#hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--a-color);
+    margin: 6px 0;
+}
+ul {
+    list-style-type: none;
+  }
+  .hamburger-menu {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  .hamburger-menu.active {
+    transform: rotate(180deg);
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu.active {
+    display: block;
+  }
+
+  .menu-item-1,
+  .menu-item-2 {
+    padding: 10px;
+    background-color: peachpuff;
+    border: 1px solid darkblue;
+    text-align: center;
+    text-decoration: none;
+  }
+  #map {
+    width:100%;
+    height:500px;
+}
+/* Footer */
+footer {
+    text-align: center;
+}
+figcaption {
+    font-size: 6px;
+}
+/* Body */
+body {
+    background: var(--main-background-color);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: var(--main-header-color);
+    color: var(--main-background-color);
+    text-align: center;
+}
+
+h1 {
+    padding-top: 0px;
+    padding-bottom: 40px;
+}
+
+/* Navigation */
+#main-nav, .menu {
+    background-color: var(--nav-background-color);
+    width: 100%;
+}
+
+#main-nav ul, .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#main-nav ul li{
+    flex: 1;
+    text-align: center;
+    padding: 15px 0;
+    border: 1px solid var(--main-nav-text-color);
+}
+
+#main-nav a, .menu a {
+    margin-top: 7px;
+    text-decoration: none;
+    color: var(--main-nav-text-color);
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Main Content */
+main {
+    padding: 30px;
+    align-items: center;
+}
+
+main p {
+    text-align: center;
+}
+
+/* Centering Bottom Image */
+#bottomimage {
+    display: block;
+    margin: 25px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Paragraph Styling */
+main p:first-of-type {
+    margin-bottom: 50px;
+}
+
+main p:last-of-type {
+    margin-top: 50px;
+}
+
+/* Top Screen */
+#topscreen {
+    display: flex;
+    padding: 10px;
+    gap: 1200px;
+}
+
+/* Image Cycle */
+#imagecycle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#imagecycle img {
+    border: 1px solid var(--main-outline-color);
+    padding: 5px;
+    display: block;
+}
+
+/* Autopbox and Aubottombox */
+#autopbox {
+    display: flex;
+}
+
+#aubottombox {
+    display: flex;
+    margin-top: 70px;
+}
+
+#autext {
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 50px;
+}
+
+#autext p {
+    margin-top: 30px;
+}
+
+/* Contact Information */
+#contactinfo {
+    margin-left: -50px;
+    list-style: none;
+}
+
+#contactinfo li {
+    display: flex;
+    text-align: center;
+}
+
+#contactinfo a {
+    align-items: center;
+    text-decoration: none;
+    color: var(--main-nav-text-color);
+    font-size: 25px;
+    gap: 10px;
+}
+
+#contactinfo li img {
+    margin-right: 10px;
+}
+
+/* Top Images */
+#topimages {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+#service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#topimages h3, #bottomimages h3 {
+    background: var(--main-header-color);
+    width: 200px;
+}
+
+#bottomimages {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.one {
+    flex: 1;
+    text-align: center;
+}
+
+.half {
+    flex: 0.5;
+}
+
+/* Dropdown Menu */
+.menu-btn {
+    background-color: var(--nav-background-color);
+    color: var(--main-nav-text-color);
+    padding: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: none;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dropdown-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: var(--main-background-color);
+    min-width: 110px;
+    z-index: 1;
+}
+
+.links,
+.links-hidden {
+    display: inline-block;
+    color: var(--nav-background-color);
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.links-hidden {
+    display: block;
+}
+
+.links {
+    display: inline-block;
+}
+
+#main-nav a:hover,
+.links-hidden:hover,
+.links:hover, .menu a:hover,
+.links-hidden:hover,
+.links:hover  {
+    transform: scale(1.2);
+}
+
+.dropdown-menu:hover .menu-content {
+    display: block;
+}
+
+/* Join Section */
+#join {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#hireform {
+    margin-top: 25px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center; /* Aligns label and input vertically */
+    justify-content: space-between; /* Ensures proper spacing */
+    width: 100%;
+    max-width: 500px; /* Adjust as needed */
+    margin-bottom: 10px; /* Adds spacing between fields */
+}
+
+.form-group label {
+    flex: 1; /* Allows label to take up space */
+    min-width: 120px; /* Ensures labels have a minimum width */
+    text-align: right; /* Aligns text to the right for consistency */
+    margin-right: 10px; /* Adds spacing between label and input */
+}
+
+.form-group input {
+    flex: 2; /* Allows input to take up more space */
+    width: 100%; /* Ensures responsiveness */
+    padding: 5px;
+}
+  
+input[type="submit"] {
+    display: block; /* Ensures the button stays separate */
+    margin-top: 10px;
+    width: 100%; /* Adjust width as needed */
+    max-width: 200px;
+    padding: 10px;
+}
+
+/* Boxaround */
+.boxaround {
+    border: 2px solid var(--main-nav-text-color);
+    border-radius: 15px;
+    padding: 20px;
+    background-color: var(--nav-background-color);
+    width: 80%;
+    margin: 20px auto;
+}
+#toggle-nav div {
+    width:25px;
+    height:2px;
+    background-color: red;
+    margin:6px 0;
+}
+/* Ratecalc Section */
+#ratecalc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.rate {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+#headerratecalc {
+    text-align: center;
+}
+
+#headerratecalc h2 {
+    padding-bottom: 40px;
+}
+
+.employeediv {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.rack { background-color: var(--main-rack-color); }
+.aisle { background-color: var(--main-aisle-color); }
+.dock { background-color: var(--main-dock);  color: white; }
+.office { background-color: var(--main-office-color); color: white; }
+
+/* --------------- Computer View --------------- */
+@media screen and (min-width: 900px) {
+    .form-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+        grid-template-rows: repeat(2, 1fr); /* Two equal rows */
+        gap: 10px; /* Space between grid items */
+        max-width: 600px; /* Adjust width as needed */
+        margin: auto; /* Centering */
+    }
+    .hamburger-menu {
+        display: none;
+    }
+    #ourstafftopimg {
+        margin-top: 100px;
+    }
+    #transloadimg {
+        margin-top: 50px;
+        margin-right: -50px;
+    }
+    #localimg {
+        margin-top: 80px;
+        margin-right: -50px;
+    }
+    #hamburger {
+        display: none;
+    }
+    #autopbox {
+        flex: none;
+    }
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 45px;
+        padding-bottom: 20px;
+    }
+
+    #main-nav, .menu {
+        background-color: var(--nav-background-color);
+        width: 100%;
+    }
+    
+    #main-nav ul, .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #main-nav ul li, .menu ul li {
+        flex: 1;
+        text-align: center;
+        padding: 10px 0;
+        border: 1px solid var(--main-nav-text-color);
+    }
+    
+    #main-nav a, .menu a {
+        margin-top: 7px;
+        text-decoration: none;
+        color: var(--main-nav-text-color);
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        justify-content: center;
+        gap: 15px;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    /* Reduce padding and spacing */
+    main {
+        padding: 15px;
+    }
+
+    #autopbox img {
+        margin-left: 50px;
+    }
+
+    #aubottombox img {
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+    
+    #aubottombox h2 {
+        text-align: center;
+        font-size: 40px;
+        margin-left: 100px;
+    }
+
+    #contacttext {
+        margin-right: 150px;
+    }
+
+    /* Image adjustments */
+    #imagecycle {
+        flex-wrap: wrap;
+    }
+
+    #imagecycle img {
+        width: 60px;
+        height: auto;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    #bottomimages {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 60px;
+        gap: 140px;
+    }
+
+/* Ensure text fits within warehouse boxes */
+.warehouse {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 150px);
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
+    background-color: #ddd;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px; /* Ensures padding inside each section */
+    overflow: hidden; /* Ensures content does not overflow */
+    text-overflow: ellipsis; /* Adds ellipsis for overflowed text */
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+/* If needed, allow text to wrap if it's too long */
+.section p {
+    white-space: normal; /* Allows text to wrap within the box */
+    word-wrap: break-word; /* Breaks long words to fit in the box */
+}
+
+    .warehouse p {
+        margin-top: 2px;
+    }
+    #toggle-nav {
+        display:none;
+    }
+    #crossimg {
+        margin-top: 40px;
+    }
+    .employee {
+        display: flex;
+    }
+    #bottomform {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centers button horizontally */
+        justify-content: center; /* Centers content vertically */
+        text-align: center; /* Ensures text-based elements are centered */
+        grid-column: span 2; /* Ensures it spans across two grid columns if necessary */
+    }
+    #submitbtn {
+        width: 100%; /* Makes it stretch to full parent width */
+        max-width: 200px; /* Set a max width to prevent it from becoming too large */
+    }
+}
+
+/* --------------- Mobile View (Phones) --------------- */
+@media (max-width: 899px) {
+    #main-nav {
+        display: none;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    body {
+        font-size: 14px;
+        text-align: center;
+    }
+    #topscreen {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    /* Stack navigation items vertically */
+    #main-nav ul, .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    #main-nav ul li, .menu ul {
+        width: 100%;
+        padding: 10px 0;
+    }
+    #user {
+        display: none;
+    }
+
+    /* Adjust top section */
+    #topscreen {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    #clalogo {
+        max-width: 110px;
+    }
+
+    /* Stack navigation items */
+    #main-nav ul, .menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Dropdown menu */
+    .dropdown-menu {
+        text-align: center;
+    }
+
+    .menu-btn {
+        width: 100%;
+    }
+
+    main {
+        padding: 15px;
+        margin-top: 50px;
+    }
+
+    #autopbox, #aubottombox, #ratetopbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #autopbox img, #aubottombox img, #ratetopbox img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    /* Contact section */
+    #aubottomimg {
+        margin-right: auto;
+    }
+
+    #contactimg {
+        max-width: 30px;
+    }
+
+    #contactinfo li {
+        justify-content: center;
+    }
+
+    #topimages, #bottomimages {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #bottomimages {
+        margin-top: 30px;
+    }
+    #topimages h3, #bottomimages h3{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #ratecalc {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center; /* Ensures inline elements inside are also centered */
+    }
+
+    .rate {
+        flex: 1;
+        margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    #autopbox, #ratetopbox {
+        margin: auto;
+    }
+
+    #contacttext {
+        padding: 30px;
+    }
+
+    #contacttext h2 {
+        font-size: 40px;
+    }
+
+    #contactinfo ul li {
+        font-size: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px;
+        text-align: center;
+    }
+    #autext {
+        text-align: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #autext p {
+        margin-top: 30px;
+    }
+
+    .warehouse {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(6, 150px);
+        justify-content: center;
+        gap: 5px;
+        padding: 5px;
+        background-color: #ddd;
+    }
+    
+    .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .rack p {
+        display: inline;
+        margin-left: 5px;
+    }
+}
