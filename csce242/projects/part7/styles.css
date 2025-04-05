@@ -18,6 +18,9 @@
     --main-open-area: gray;
     --main-dock: blue;
 }
+.repo-link {
+    margin-right: 100px;
+}
 #service {
     color: var(--main-outline-color);
 }
